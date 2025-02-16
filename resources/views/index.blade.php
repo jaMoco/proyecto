@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto J.C - Registro e Inicio</title>
-    <link rel="stylesheet" href="{{ asset('public\css\style.css') }}">
-    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
@@ -75,7 +74,7 @@
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="card"></ion-icon></span>
-                    <input type="number" id="registerCedula" required minlength="6" maxlength="8">
+                    <input type="number" id="registerCedula" required minlength="7" maxlength="8">
                     <label>Cédula</label>
                 </div>
                 <div class="input-box">
@@ -102,9 +101,7 @@
     <!-- Iconos de Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="{{ asset(public\js\index.js) }}"></script>
-
-
+    <script src="{{ asset('js/index.js') }}"></script>
 </body>
 
 </html>
