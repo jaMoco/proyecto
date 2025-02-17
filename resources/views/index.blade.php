@@ -75,7 +75,7 @@
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" id="registerPassword"  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\S+$).{8,}">
+                    <input type="password" id="registerPassword"  required>
                     <label>Contraseña</label>
                     <span class="error" id="error-message"></span>
                 </div>
