@@ -14,7 +14,7 @@
             <a href="/resources/views/index.blade.php">Inicio</a>
             <a href="#">Servicios</a>
             <a href="#">Contactos</a>
-            <button class="btnLogin-popup">Inicio</button>
+            <button class="btnLogin-popup">Iniciooooo</button>
         </nav>
     </header>
     <main>
