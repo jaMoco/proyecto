@@ -22,7 +22,8 @@
         <!-- Formulario de Inicio de Sesión -->
         <div class="form-box login">
             <h2>Inicio</h2>
-            <form id="loginForm">
+            <form action="/login" id="loginForm" method="post">
+            @csrf
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
                     <input type="text" id="loginUsername" required>
