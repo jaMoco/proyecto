@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-
 <body>
     <header>
         <h2 class="logo">Instituto J.C</h2>
@@ -19,10 +17,8 @@
             <button class="btnLogin-popup">Inicio</button>
         </nav>
     </header>
-
     <div class="wrapper">
         <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
-
         <!-- Formulario de Inicio de Sesión -->
         <div class="form-box login">
             <h2>Inicio</h2>
@@ -47,11 +43,11 @@
                 </div>
             </form>
         </div>
-
         <!-- Formulario de Registro -->
         <div class="form-box register">
             <h2>Regístrate</h2>
-            <form id="registerForm">
+            <form action="/registro" id="registerForm" method="post">
+                @csrf <!-- Token CSRF para protección -->
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
                     <input type="text" id="registerNombre" required minlength="2" maxlength="15">
@@ -79,8 +75,9 @@
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" id="registerPassword" required>
+                    <input type="password" id="registerPassword"  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\S+$).{8,}">
                     <label>Contraseña</label>
+                    <span class="error" id="error-message"></span>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
@@ -97,7 +94,6 @@
             </form>
         </div>
     </div>
-
     <!-- Iconos de Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

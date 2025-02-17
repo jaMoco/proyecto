@@ -20,7 +20,7 @@ background-position:center;
 
 
 header{
-position: fixed;
+position:absolute;
 top: 0;
 left: 0;
 width: 100%;
@@ -86,7 +86,7 @@ color: #162938;
 }
 
 .wrapper{
-position: relative;
+position:relative;
 width: 400px;
 height: 440px;
 background: transparent;
@@ -100,6 +100,7 @@ align-items: center;
 overflow: hidden;
 transform: scale(0);
 transition: transform .5s ease,height .2s ease;
+margin: 80px 0 50px 0 
 }
 
 .wrapper.active-popup{
@@ -259,3 +260,14 @@ font-weight: 600;
 text-decoration: underline;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Quitar los controles de incremento y decremento en Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
