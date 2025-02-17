@@ -70,7 +70,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         wrapper.classList.remove('active-popup');
         wrapper.classList.remove('active');
         // Redirigir al usuario a la página de inicio de sesión
-        window.location.href = '/login'; // Cambia '/login' por la ruta correcta en tu aplicación Laravel
+        window.location.href = '/tablesnotes';
     });
 });
 
@@ -97,3 +97,4 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         });
     }
 });
+

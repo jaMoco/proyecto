@@ -3,14 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class MyController extends Controller
-{
-    //
-}
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
@@ -18,7 +10,7 @@ class MyController extends Controller
 {
     public function showRegistrationForm()
     {
-        return view('register'); // Asegúrate de tener esta vista en resources/views/register.blade.php
+        return view('register');
     }
 
     public function register(Request $request)
@@ -50,7 +42,8 @@ class MyController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        return redirect('/login')->with('success', 'Registro exitoso. Por favor, inicia sesión.');
+        return redirect()->route('login.show')->with('success', 'Registro exitoso. Por favor, inicia sesión.');
     }
 }
+
 
