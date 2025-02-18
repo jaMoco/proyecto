@@ -22,7 +22,7 @@
         <!-- Formulario de Inicio de Sesión -->
         <div class="form-box login">
             <h2>Inicio</h2>
-            <form action="/login" id="loginForm" method="post">
+            <form method="POST" action="{{ route('login') }}" id="loginForm">
             @csrf
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
@@ -47,7 +47,7 @@
         <!-- Formulario de Registro -->
         <div class="form-box register">
             <h2>Regístrate</h2>
-            <form action="/registro" id="registerForm" method="post">
+            <form method="POST" action="{{ route('register') }}" id="registerForm" >
                 @csrf <!-- Token CSRF para protección -->
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
@@ -98,7 +98,8 @@
     <!-- Iconos de Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="{{ asset('js/index.js') }}"></script>
+    <script src="{{ asset('js\index.js') }}"></script>
+
 </body>
 
 </html>

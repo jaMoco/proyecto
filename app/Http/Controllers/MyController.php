@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class MyController extends Controller
 {
     public function showRegistrationForm()
     {
-        return view('register');
+        return view('index');
     }
 
     public function register(Request $request)
@@ -44,6 +45,31 @@ class MyController extends Controller
 
         return redirect()->route('login.show')->with('success', 'Registro exitoso. Por favor, inicia sesión.');
     }
+
+    public function showLoginForm()
+    {
+        return view('login');
+    }
+
+    public function login(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|string|email',
+            'password' => 'required|string',
+        ]);
+
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            return redirect()->route('home')->with('success', 'Inicio de sesión exitoso.');
+        } else {
+            return redirect()->back()->withErrors(['email' => 'Las credenciales no coinciden con nuestros registros.']);
+        }
+    }
+
+        public function logout(Request $request)
+        {
+            Auth::logout();
+            return redirect()->route('logout')->with('success', 'Sesión cerrada correctamente.');
+    }
 }
-
-

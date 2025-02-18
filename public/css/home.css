@@ -65,8 +65,8 @@ transform-origin: left;
 transform: scaleX(1);
 }
 
-.navigation .btnLogin-popup{
-width: 130px;
+.navigation .btncerrar-popup{
+width: 150px;
 height: 50px;
 background: transparent;
 border: 2px solid rgb(27, 164, 0);
@@ -80,7 +80,7 @@ margin-left: 40px;
 transition: .5s;
 }
 
-.navigation .btnLogin-popup:hover{
+.navigation .btncerrar-popup:hover{
 background: rgb(0, 199, 56);
 color: #162938;
 }
