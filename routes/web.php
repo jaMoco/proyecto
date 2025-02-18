@@ -16,6 +16,9 @@ Route::get('/login', [MyController::class, 'showLoginForm'])->name('login.show')
 Route::post('/login', [MyController::class, 'login'])->name('login');
 Route::post('/logout', [MyController::class, 'logout'])->name('logout');
 
+
 Route::get('/tablesnotes', function () {
     return view('tablesnotes');
 })->name('tablesnotes');
+
+
