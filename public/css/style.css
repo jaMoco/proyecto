@@ -89,8 +89,8 @@ color: #162938;
 position:relative;
 top: 50%;
 left: 40%;
-width: 550px;
-height: 500px;
+width: 1000px;
+height: 550px;
 background: transparent;
 border:2px solid rgba(56, 241, 96, 0.619);
 border-radius: 20px;
@@ -276,7 +276,7 @@ input[type="number"] {
 
 .ini {
     position:relative;
-    top: 85;
+    top: -40px;
     left: -10%;
     width: auto;
     height: auto;
@@ -296,7 +296,7 @@ input[type="number"] {
 .welcome-section h3 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-style: oblique;
-    font-size: 2.5em;
+    font-size: 3.5em;
     margin-bottom: 10px;
     color: #1bc904;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -314,4 +314,21 @@ input[type="number"] {
 .blurred {
     filter: blur(50px);
     transition: filter 0.5s ease;
+}
+
+.descrip {
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    border-radius: 10px;
+    border: 2px solid #19c901; /* Borde resaltado en verde */
+    box-shadow: 0 0 10px rgba(25, 201, 1, 0.5); /* Sombra que combina con el borde */
+}
+
+.descrip p {
+    margin-bottom: 15px;
 }
