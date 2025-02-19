@@ -276,6 +276,7 @@ input[type="number"] {
 
 .ini {
     position:relative;
+    top: 85;
     left: -10%;
     top: -30%;
     width: auto;
