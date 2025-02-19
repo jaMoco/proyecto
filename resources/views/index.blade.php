@@ -17,6 +17,7 @@
             <button class="btnLogin-popup">Inicio</button>
         </nav>
     </header>
+    
     <div class="wrapper">
         <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
         <!-- Formulario de Inicio de Sesión -->

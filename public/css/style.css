@@ -102,7 +102,8 @@ align-items: center;
 overflow: hidden;
 transform: scale(0);
 transition: transform .5s ease,height .2s ease;
-margin: 100px 0 50px 0 
+margin: 100px 0 50px 0;
+z-index: 1000;
 }
 
 .wrapper.active-popup{
@@ -176,7 +177,7 @@ position: absolute;
 top: 50%;
 left: 5px;
 transform: translateY(-50%);
-font-size: 1em;
+font-size: 0,5em;
 color: #162938;
 font-weight: 500;
 pointer-events: none;
@@ -185,7 +186,7 @@ transition: .5s;
 
 .input-box input:focus~label,
 .input-box input:valid~label{
-top: -5px;
+top: -10px;
 }
 
 .input-box input{
