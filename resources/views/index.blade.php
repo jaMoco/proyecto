@@ -47,7 +47,7 @@
         <!-- Formulario de Registro -->
         <div class="form-box register">
             <h2>Regístrate</h2>
-            <form action="/registro" id="registerForm" method="post">
+                <form action="/registro" id="registerForm" method="post">
                 @csrf <!-- Token CSRF para protección -->
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
@@ -95,10 +95,21 @@
             </form>
         </div>
     </div>
+    <div class="ini">
+        <div class="welcome-section">
+            <h3>Bienvenidos</h3>
+            <p>al Portal de Estudiantes del Instituto J.C</p>
+        </div>
+            <div class="descrip">
+                <p>Aquí, cada estudiante puede acceder de manera fácil y rápida a sus calificaciones y mantenerse al día con su rendimiento académico. Nuestro objetivo es ofrecerte una plataforma intuitiva donde puedas consultar tus notas, descargar reportes y estar informado sobre todas tus evaluaciones.</p>
+                <p>Estamos comprometidos con tu éxito y creemos que la transparencia y el acceso a la información son clave para tu desarrollo. ¡Explora tu portal y descubre todo lo que tenemos para ofrecerte!</p>
+                <p>Las calificaciones se mostrarán luego de iniciar sesión</p>
+            </div>
+        </div>
+    </div>
     <!-- Iconos de Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="{{ asset('js/index.js') }}"></script>
 </body>
-
 </html>

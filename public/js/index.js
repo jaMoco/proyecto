@@ -4,6 +4,9 @@ const wrapper = document.querySelector('.wrapper');
 // Botón o enlace para ir a la pantalla de inicio de sesión
 const loginLink = document.querySelector('.login-link');
 
+//variable para para colocar el contenido borroso
+const content = document.querySelector('.ini');
+
 // Botón o enlace para ir a la pantalla de registro
 const registerLink = document.querySelector('.register-link');
 
@@ -12,6 +15,18 @@ const btnLinkPopup = document.querySelector('.btnLogin-popup');
 
 // Icono o botón para cerrar el popup
 const iconClose = document.querySelector('.icon-close');
+
+// Cuando el usuario hace clic en el botón de inicio de sesión, abrimos la ventana y aplicamos blur al contenido
+btnLinkPopup.addEventListener('click', () => {
+    wrapper.classList.add('active-popup');
+    content.classList.add('blurred');
+});
+
+// Si el usuario quiere cerrar la ventana, quitamos la clase que lo muestra y removemos el blur del contenido
+iconClose.addEventListener('click', () => {
+    wrapper.classList.remove('active-popup');
+    content.classList.remove('blurred');
+});
 
 // Cuando el usuario hace clic en "Registrarse", mostramos el formulario de registro
 registerLink.addEventListener('click', () => {
