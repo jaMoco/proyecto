@@ -332,3 +332,16 @@ input[type="number"] {
 .descrip p {
     margin-bottom: 15px;
 }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif; 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 14px;
+}  

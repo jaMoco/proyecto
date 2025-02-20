@@ -108,6 +108,11 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <p>�� 2022 Instituto J.C. Todos los derechos reservados.</p>
+    </footer>
+    
     <!-- Iconos de Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
